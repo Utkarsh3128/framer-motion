@@ -14,7 +14,7 @@ function App() {
     scrollYProgress,
     [0, 1],
     ["rgb(245,245,245)", "rgb(1,245,13)"]
-  ); // this will animate the scrollYProgress from 0% to 100% with color
+  ); // this will animate the scrollYProgress from 0% to 100% with responding color
 
   return (
     <>
