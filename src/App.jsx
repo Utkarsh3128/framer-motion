@@ -3,6 +3,7 @@ import AnimationControls from "./Components/AnimationControls";
 import BasicOfMotion from "./Components/BasicOfMotion";
 import Gestures from "./Components/Gestures";
 import ScrollBasedAnimation from "./Components/ScrollBasedAnimation";
+import SimpleAnimation from "./Components/SimpleAnimation";
 import ViewBasedAnimation from "./Components/ViewBasedAnimation";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
@@ -32,6 +33,7 @@ function App() {
       />
       <BasicOfMotion />
       <Gestures />
+      <SimpleAnimation/>
       <AnimationControls />
       <ViewBasedAnimation />
       <ScrollBasedAnimation />
