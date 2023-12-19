@@ -1,8 +1,33 @@
-# React + Vite
+# Framer-Motion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## In this project we will cover how to use Framer Motion
+Framer Motion is a powerful motion library for React
 
-Currently, two official plugins are available:
+### The ```<motion/>``` component
+The core of Motion is the motion component. It offers props that allows us to 
+- Animate
+- Drag
+- Respond to gestures
+- Deeply animate via variants
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## File Structure
+
+### ```BasicsOfAnimation.jsx```
+There is a motion component for every HTML and SVG element. 
+For eg, in this file we have ```<motion.div/>``` & ```<motion.button/>```
+``` javascript
+<motion.div
+  initial={{
+   rotate: '0deg',
+   scale: 0,
+   y: 0,
+  }}
+  animate={{
+   rotate: "180deg",
+   scale: 1,
+   y: [0, 150, -150, -150, 0],
+  }}
+></motion.div>
+```
+
+**AnimatePresence**
